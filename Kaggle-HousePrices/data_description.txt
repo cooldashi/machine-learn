@@ -1,0 +1,523 @@
+MSSubClass：识别销售涉及的住宅类型。	
+
+        20个1-STORY 1946和NEWER ALL STYLES
+        30 1-STORY 1945＆OLDER
+        40个1-STORY W / FINISHED ATTIC ALL AGES
+        45 1-1 / 2故事 - 无人问津
+        50 1-1 / 2故事结束了所有年龄
+        60 2-STORY 1946＆NEWER
+        70 2-STORY 1945＆OLDER
+        75 2-1 / 2故事所有时代
+        80分或多级
+        85 SPLIT FOYER
+        90双面 - 所有风格和年龄
+       120 1-STORY PUD（计划单位开发） -  1946年和NEWER
+       150 1-1 / 2故事PUD  - 所有时代
+       160 2-STORY PUD  -  1946＆NEWER
+       180 PUD  -  MULTILEVEL  -  INCL SPLIT LEV / FOYER
+       190 2家庭转换 - 所有风格和时代
+
+MSZoning：标识销售的一般分区分类。
+		
+       农业
+       C商业
+       FV浮村住宅
+       我工业
+       RH住宅高密度
+       RL住宅低密度
+       RP住宅低密度公园 
+       RM住宅中密度
+	
+LotFrontage：街道的线性脚连接到财产
+
+LotArea：地块尺寸，平方英尺
+
+街道：道路通行权的类型
+
+       Grvl砾石	
+       铺平道路
+       	
+胡同：胡同通道的类型
+
+       Grvl砾石
+       铺平道路
+       NA没有胡同访问
+		
+LotShape：一般的财产形状
+
+       Reg Regular	
+       IR1稍微不规则
+       IR2中度不规则
+       IR3不规则
+       
+LandContour：物业的平整度
+
+       Lvl近平/水平	
+       Bnk Banked  - 从街道等级到建筑物的快速而显着的增长
+       HLS山坡 - 从一侧到另一侧的显着坡度
+       低抑郁症
+		
+实用程序：可用的实用程序类型
+		
+       AllPub所有公用事业（E，G，W和S）	
+       NoSewr电力，燃气和水（化粪池）
+       NoSeWa仅限电力和天然气
+       ELO仅限电力	
+	
+LotConfig：批量配置
+
+       里面很多
+       角落很多
+       CulDSac Cul-de-sac
+       FR2正面两侧的财产
+       FR3正面三面
+	
+LandSlope：物业坡度
+		
+       Gtl温柔的斜坡
+       Mod中等斜率	
+       Sev严重斜坡
+	
+邻里：Ames市区内的物理位置
+
+       Blmngtn Bloomington Heights
+       Blueste Bluestem
+       BrDale Briardale
+       BrkSide Brookside
+       ClearCr Clear Creek
+       CollgCr College Creek
+       Crawfor Crawford
+       爱德华兹爱德华兹
+       吉尔伯特吉尔伯特
+       IDOTRR爱荷华州DOT和铁路
+       MeadowV草甸村
+       米切尔米切尔
+       命名北艾姆斯
+       NoRidge Northridge
+       NPkVill Northpark Villa
+       NridgHt Northridge Heights
+       NWAmes西北艾姆斯
+       OldTown旧城区
+       SWISU爱荷华州立大学南部和西部
+       Sawyer Sawyer
+       SawyerW Sawyer West
+       Somerst Somerset
+       StoneBr Stone Brook
+       Timber Timberland
+       Veenker Veenker
+			
+条件1：接近各种条件
+	
+       动脉毗邻主干道
+       馈线邻近馈线街	
+       规范正常	
+       RRNn在南北铁路的200'范围内
+       RRAn毗邻南北铁路
+       PosN近正面场外功能 - 公园，绿地等
+       PosA毗邻积极的场外功能
+       RRNe东西铁路200'以内
+       RRAe毗邻东西铁路
+	
+条件2：接近各种条件（如果存在多个条件）
+		
+       动脉毗邻主干道
+       馈线邻近馈线街	
+       规范正常	
+       RRNn在南北铁路的200'范围内
+       RRAn毗邻南北铁路
+       PosN近正面场外功能 - 公园，绿地等
+       PosA毗邻积极的场外功能
+       RRNe东西铁路200'以内
+       RRAe毗邻东西铁路
+	
+BldgType：住宅类型
+		
+       1Fam单户独立式	
+       2FmCon双族转换; 最初是作为一个家庭住宅建造的
+       Duplx Duplex
+       TwnhsE联排别墅结束单位
+       TwnhsI Townhouse Inside Unit
+	
+HouseStyle：住宅风格
+	
+       1Story一个故事
+       1.5Fin一个半故事：第二级完成
+       1.5 Unf一个半故事：二级未完成
+       2Story两个故事
+       2.5Fin两个半故事：第二级完成
+       2.5 Unf两个半故事：二级未完成
+       SFoyer Split Foyer
+       SLvl分层
+	
+OverallQual：评估房屋的整体材料和完工情况
+
+       10非常好
+       9优秀
+       8非常好
+       7好
+       6高于平均水平
+       5平均值
+       4低于平均水平
+       3公平
+       2差
+       1很差
+	
+OverallCond：评估房屋的整体状况
+
+       10非常好
+       9优秀
+       8非常好
+       7好
+       6高于平均水平	
+       5平均值
+       4低于平均水平	
+       3公平
+       2差
+       1很差
+		
+YearBuilt：原始施工日期
+
+YearRemodAdd：重新构建日期（如果没有重新构建或添加，则与构建日期相同）
+
+RoofStyle：屋顶类型
+
+       平坦的
+       山墙盖博
+       Gambrel Gabrel（谷仓）
+       髋关节
+       Mansard Mansard
+       棚棚
+		
+RoofMatl：屋顶材料
+
+       ClyTile粘土或瓷砖
+       CompShg标准（复合）木瓦
+       膜膜
+       金属金属
+       卷辊
+       Tar＆Grv Gravel＆Tar
+       WdShake Wood Shakes
+       WdShngl Wood Shingles
+		
+Exterior1st：房屋外墙
+
+       AsbShng Asbestos Shingles
+       AsphShn Asphalt Shingles
+       BrkComm砖常见
+       BrkFace砖面
+       CBlock Cinder Block
+       CemntBd水泥板
+       HdBoard硬板
+       ImStucc模仿灰泥
+       MetalSd金属壁板
+       其他其他
+       胶合板胶合板
+       PreCast PreCast	
+       石头石
+       灰泥灰泥
+       乙烯基乙烯基壁板
+       Wd Sdng Wood Siding
+       WdShing Wood Shingles
+	
+Exterior2nd：房屋外墙（如果有多种材料）
+
+       AsbShng Asbestos Shingles
+       AsphShn Asphalt Shingles
+       BrkComm砖常见
+       BrkFace砖面
+       CBlock Cinder Block
+       CemntBd水泥板
+       HdBoard硬板
+       ImStucc模仿灰泥
+       MetalSd金属壁板
+       其他其他
+       胶合板胶合板
+       PreCast PreCast
+       石头石
+       灰泥灰泥
+       乙烯基乙烯基壁板
+       Wd Sdng Wood Siding
+       WdShing Wood Shingles
+	
+MasVnrType：砌体贴面类型
+
+       BrkCmn砖常见
+       BrkFace砖面
+       CBlock Cinder Block
+       无无
+       石头石
+	
+MasVnrArea：平方英尺的砌体饰面区域
+
+ExterQual：评估外部材料的质量 
+		
+       非常好
+       Gd好
+       TA平均值/典型值
+       Fa Fair
+       宝差
+		
+ExterCond：评估外部材料的现状
+		
+       非常好
+       Gd好
+       TA平均值/典型值
+       Fa Fair
+       宝差
+		
+基础：基础类型
+		
+       BrkTil Brick＆Tile
+       CBlock Cinder Block
+       PConc Poured Contrete	
+       板坯平板
+       石头石
+       木材木材
+		
+BsmtQual：评估地下室的高度
+
+       优秀（100+英寸）	
+       Gd Good（90-99英寸）
+       TA典型（80-89英寸）
+       Fa Fair（70-79英寸）
+       Po差（<70英寸
+       NA没有地下室
+		
+BsmtCond：评估地下室的一般情况
+
+       非常好
+       Gd好
+       TA典型 - 允许轻微潮湿
+       Fa Fair  - 潮湿或有些开裂或沉淀
+       Po差 - 严重的开裂，沉淀或潮湿
+       NA没有地下室
+	
+BsmtExposure：指罢工或花园水平的墙壁
+
+       Gd良好曝光
+       Av平均曝光率（分割级别或门厅通常得分平均值或以上）	
+       Mn最小暴露量
+       没有曝光
+       NA没有地下室
+	
+BsmtFinType1：地下室完工区域的评级
+
+       GLQ Good Living Quarters
+       ALQ平均生活区
+       BLQ低于平均生活区	
+       Rec Rec Rec Room
+       LwQ低质量
+       Unf Unfinshed
+       NA没有地下室
+		
+BsmtFinSF1：类型1完成平方英尺
+
+BsmtFinType2：地下室成品区域的评级（如果有多种类型）
+
+       GLQ Good Living Quarters
+       ALQ平均生活区
+       BLQ低于平均生活区	
+       Rec Rec Rec Room
+       LwQ低质量
+       Unf Unfinshed
+       NA没有地下室
+
+BsmtFinSF2：2型成品平方英尺
+
+BsmtUnfSF：未完成的地下室平方英尺
+
+TotalBsmtSF：地下室总面积
+
+加热：加热类型
+		
+       地板炉
+       GasA Gas强制加热空气炉
+       GasW Gas热水或蒸汽加热
+       Grav重力炉	
+       OthW除了气体以外的热水或蒸汽热量
+       壁挂炉
+		
+HeatingQC：加热质量和条件
+
+       非常好
+       Gd好
+       TA平均值/典型值
+       Fa Fair
+       宝差
+		
+CentralAir：中央空调
+
+       N不
+       是的
+		
+电气：电气系统
+
+       SBrkr标准断路器和Romex
+       FuseA保险丝盒超过60 AMP和所有Romex接线（平均）	
+       FuseF 60 AMP保险丝盒，主要是Romex接线（公平）
+       FuseP 60 AMP保险丝盒，主要是旋钮和管接线（差）
+       混合混合
+		
+1stFlrSF：一楼平方英尺
+ 
+2ndFlrSF：二楼平方英尺
+
+LowQualFinSF：低质量的平方英尺（所有楼层）
+
+GrLivArea：以上（地面）生活区平方英尺
+
+BsmtFullBath：地下室齐全的浴室
+
+BsmtHalfBath：地下室半浴室
+
+FullBath：满级以上的浴室
+
+HalfBath：半年级以上
+
+卧室：楼层以上的卧室（不包括地下室卧室）
+
+厨房：厨房以上
+
+KitchenQual：厨房质量
+
+       非常好
+       Gd好
+       TA典型/平均
+       Fa Fair
+       宝差
+       	
+TotRmsAbvGrd：以上级别的房间总数（不包括浴室）
+
+功能：家庭功能（假设除非有必要进行扣除）
+
+       典型功能
+       Min1次要扣除1
+       Min2次要扣除2
+       Mod中等扣减
+       Maj1主要扣减1
+       Maj2主要扣减2
+       Sev严重受损
+       Sal Salage只
+		
+壁炉：壁炉数量
+
+FireplaceQu：壁炉质量
+
+       Ex Excellent  - 特殊的砌体壁炉
+       Gd Good  - 主层的砌体壁炉
+       TA平均 - 主要生活区的预制壁炉或地下室的砌体壁炉
+       Fa Fair  - 地下室的预制壁炉
+       Po Poor  -  Ben Franklin Stove
+       NA没有壁炉
+		
+GarageType：车库位置
+		
+       2种类型多种类型的车库
+       Attchd附在家里
+       地下室地下室车库
+       BuiltIn Built-In（车库的一部分 - 通常在车库上方有房间）
+       CarPort汽车港口
+       Detchd离家出走
+       NA没有车库
+		
+GarageYrBlt：年车库建成
+		
+GarageFinish：车库的内部装饰
+
+       Fin完成了
+       RFn粗糙完成	
+       Unf未完成
+       NA没有车库
+		
+GarageCars：车库容量的车库大小
+
+GarageArea：车库的面积，平方英尺
+
+GarageQual：车库质量
+
+       非常好
+       Gd好
+       TA典型/平均
+       Fa Fair
+       宝差
+       NA没有车库
+		
+GarageCond：车库状况
+
+       非常好
+       Gd好
+       TA典型/平均
+       Fa Fair
+       宝差
+       NA没有车库
+		
+PavedDrive：铺好的车道
+
+       Y Paved 
+       P部分路面
+       N Dirt / Gravel
+		
+WoodDeckSF：平方英尺的木甲板面积
+
+OpenPorchSF：平方英尺的开放式门廊区域
+
+EnclosedPorch：封闭的门廊面积，平方英尺
+
+3SsnPorch：三个季节的门廊面积，平方英尺
+
+ScreenPorch：屏幕门廊面积，平方英尺
+
+PoolArea：泳池面积，平方英尺
+
+PoolQC：泳池质量
+		
+       非常好
+       Gd好
+       TA平均值/典型值
+       Fa Fair
+       NA没有游泳池
+		
+栅栏：栅栏质量
+		
+       GdPrv良好的隐私
+       MnPrv最低隐私权
+       GdWo Good Wood
+       MnWw最小木材/线材
+       NA没有围栏
+	
+MiscFeature：其他类别未涵盖的其他功能
+		
+       电梯
+       Gar2第二车库（如果没有在车库部分描述）
+       其他
+       棚棚（超过100 SF）
+       TenC网球场
+       NA没有
+		
+MiscVal：$杂项功能的价值
+
+MoSold：已售出月份（MM）
+
+YrSold：年销售（YYYY）
+
+SaleType：销售类型
+		
+       WD保修契约 - 常规
+       CWD保修契约 - 现金
+       VWD保修契约 -  VA贷款
+       新房屋刚刚建成并出售
+       COD法院官员契约/遗产
+       Con Contract 15％首付常规条款
+       合同低首付和低利息
+       ConLI合约低利率
+       ConLD合约低跌
+       其他
+		
+SaleCondition：销售条件
+
+       正常正常销售
+       Abnorml异常销售 - 贸易，取消抵押品赎回权，卖空
+       毗邻毗邻土地购买
+       Alloca Allocation  - 两个相互关联的属性，具有独立的行为，通常是带有车库单元的公寓	
+       家庭成员之间的家庭销售
+       部分住宅在上次评估时未完成（与New Homes相关）
